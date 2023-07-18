@@ -1,15 +1,15 @@
 <header class="header">
   <h1 class="header-heading">
     <a href="{% url 'contact:index' %}" class="header-link">
-      Agenda
+      Notebook
     </a>
   </h1>
 
   <nav class="menu">
     <ul class="menu-list">
 
-      {% if user.is_authenticated %}
-        <li class="menu-item">
+      {% if user.is_authenticated %} 
+        <li class="menu-item"> 
           <a href="{% url 'contact:create' %}" class="menu-link">Create</a>
         </li>
          <li class="menu-item">
@@ -17,7 +17,7 @@
         </li>
         <li class="menu-item">
           <a href="{% url 'contact:logout' %}" class="menu-link">Logout</a>
-        </li>
+        </li> 
       {% else %}
         <li class="menu-item">
           <a href="{% url 'contact:login' %}" class="menu-link">Login</a>
